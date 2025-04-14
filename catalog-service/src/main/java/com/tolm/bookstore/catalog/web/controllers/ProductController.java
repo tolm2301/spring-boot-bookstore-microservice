@@ -1,4 +1,4 @@
-package com.tolm.bookstore.catalog.web;
+package com.tolm.bookstore.catalog.web.controllers;
 
 import com.tolm.bookstore.catalog.domain.PageResult;
 import com.tolm.bookstore.catalog.domain.Product;
