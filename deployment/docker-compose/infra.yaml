@@ -1,4 +1,4 @@
-name: 'spring-boot-microservices-course'
+name: 'tolm-bookstore-microservice'
 services:
   catalog-db:
     image: postgres:16-alpine

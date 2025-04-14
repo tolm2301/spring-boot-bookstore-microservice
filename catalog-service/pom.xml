@@ -30,6 +30,7 @@
         <java.version>17</java.version>
         <springdoc-openapi.version>2.8.5</springdoc-openapi.version>
         <spotless-maven-plugin.version>2.44.3</spotless-maven-plugin.version>
+        <dockerImageName>tolm/bookstore-${project.artifactId}</dockerImageName>
     </properties>
     <dependencies>
         <dependency>
@@ -131,6 +132,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+					<image>
+						<name>${dockerImageName}</name>
+					</image>
+				</configuration>
                 <executions>
                     <execution>
                         <goals>
