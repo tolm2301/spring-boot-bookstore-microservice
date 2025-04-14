@@ -1,6 +1,7 @@
 package com.tolm.bookstore.catalog.domain;
 
 import com.tolm.bookstore.catalog.ApplicationProperties;
+import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -29,5 +30,9 @@ public class ProductService {
                 productPage.isLast(),
                 productPage.hasNext(),
                 productPage.hasPrevious());
+    }
+
+    public Optional<Product> getProductByCode(String code) {
+        return productRepository.findByCode(code).map(ProductMapper::toProduct);
     }
 }
