@@ -14,7 +14,7 @@ import org.springframework.test.context.jdbc.Sql;
             "spring.test.database.replace=none",
             "spring.datasource.url=jdbc:tc:postgresql:16-alpine:///db",
         })
-// @Import(TestcontainersConfiguration.class)
+// @Import(TestcontainersConfiguration.class).
 @Sql("/test-data.sql")
 public class ProductRepositoryTest {
 
