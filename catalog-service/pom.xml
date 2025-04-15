@@ -30,7 +30,7 @@
         <java.version>17</java.version>
         <springdoc-openapi.version>2.8.5</springdoc-openapi.version>
         <spotless-maven-plugin.version>2.44.3</spotless-maven-plugin.version>
-        <dockerImageName>tolm/bookstore-${project.artifactId}</dockerImageName>
+        <dockerImageName>phuhaihao/bookstore-${project.artifactId}</dockerImageName>
     </properties>
     <dependencies>
         <dependency>
